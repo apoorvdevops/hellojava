@@ -20,7 +20,7 @@ pipeline {
 
         }
 
-        stage('second stage') {
+        stage('compile code') {
 
             steps {
 
@@ -31,7 +31,7 @@ sh 'javac HelloJava.java'
 
         }
 
-        stage('third stage') {
+        stage('execute code') {
 
             steps {
 
@@ -42,15 +42,7 @@ sh 'java HelloJava'
 
         }
 
-        stage('fourth stage') {
-
-            steps {
-
-                sh 'echo "this is fourth step"'
-
-            }
-
-        }
+      
 
     }
 
