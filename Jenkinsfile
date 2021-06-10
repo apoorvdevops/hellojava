@@ -2,7 +2,7 @@ pipeline {
 
     agent {
 
-        label 'node'
+        label 'apoorv-node'
 
     }
 
